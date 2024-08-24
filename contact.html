@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Gulf Coast Security Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="dark-theme">
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-logo">Gulf Coast Security Services</div>
+          <div class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="team.html" class="nav-link">Our Team</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">
+          Please fill out the below contact form and we will get in touch with
+          you asap
+        </p>
+        <div class="contact-form-container">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xrbzbyzj"
+            method="POST"
+          >
+            <p class="required-field-notice">
+              <span class="required">*</span> Indicates required field
+            </p>
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <div class="name-fields">
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  required
+                  placeholder="First"
+                />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  required
+                  placeholder="Last"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="services"
+                >Summary of Services Needed
+                <span class="required">*</span></label
+              >
+              <textarea id="services" name="services" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+      <hr class="section-divider" />
+    </main>
+    <footer>
+      <p>License Number B 3100463</p>
+      <p>&copy; 2023 Gulf Coast Security Services. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
